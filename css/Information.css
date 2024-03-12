@@ -1,0 +1,147 @@
+  /*information area*/
+  .information{
+    display: flex;
+    justify-content: center;
+  } 
+  .information_pic{  
+    width:500px;
+    height: auto;
+    padding: 4rem 2rem;
+  }
+  .information_container{
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    margin: 0 5rem;
+    line-height: 2;
+  }
+  .information_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+  .information_content h4{
+    border-bottom: 1.5px solid black;
+    margin-bottom: 30px;
+    width: 35%;
+    text-align: left;
+    font-weight: 600;
+  }
+  .information_content th{
+    font-size: 1.1rem;
+    font-weight: 600;
+    vertical-align: top;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    padding-right: 3rem;
+    padding-top: 10px;
+    line-height: 2.5;
+  }
+  .information_content td{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    line-height: 2.5;
+  }
+  /*Bootstrap 樣式調整*/
+  .carousel-indicators{
+    justify-content: end!important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .carousel-indicators button {
+    border-radius: 50% !important;
+    border: 2.2px solid rgb(251, 231, 78) !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #ffffff !important;
+}
+.carousel-item img{
+  width: 500px !important;
+  height: auto !important;
+}
+@media only screen and (max-width:900px){ /*RWD : 900px*/
+  .information_pic{  /*固定點播圖的size 寬度需和img一樣，否則指示器會跑位*/
+    width:420px;
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  .information_content h4{
+    margin-bottom: 10px;
+    width: 45%;
+
+  }
+  .carousel-item img{
+    width:420px !important;
+    height: auto !important;
+  }
+}
+
+@media only screen and (max-width:767px){   /*   RWD: 767px */
+/*商店資訊*/
+.information{
+  display: flex;
+  flex-direction: column;
+} 
+.information_pic{  /*固定點播圖的size 寬度需和img一樣，否則指示器會跑位*/
+  max-width:100%;
+  height: auto;
+  align-items: center;
+}
+.information_container{
+  max-width:30%;
+  height: auto;
+  line-height: 2;
+
+}
+.information_content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+.information_content h4{
+  border-bottom: 0px solid black;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+.information_content th{
+  font-size: 3.2vw;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0;
+  padding-right: 6rem;
+  line-height: 4;
+}
+.information_content td{
+  text-align: left;
+  font-size: 2.8vw;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 2.8;
+}
+/*Bootstrap 樣式調整*/
+.carousel-indicators{
+  justify-content: center!important;
+  margin: 0 !important;
+  width: 100% !important;
+  height: auto !important;
+}
+.carousel-indicators button {
+  border-radius: 50% !important;
+  border: 2.2px solid rgb(251, 231, 78) !important;
+  width: 15px !important;
+  height: 15px !important;
+  background-color: #ffffff !important;
+}
+.carousel-item img{
+  max-width:100%;
+  height: auto;
+}
+/*商店資訊*/
+}

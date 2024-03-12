@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-width: 360px;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+}
+/* 滾動animation */
+.scollUp.show{
+    transform: translateY(0);
+    opacity: 1;
+ }
+ /*至頂按鈕*/
+.goTop{
+  position: fixed;
+  transform: translateY(100vh);
+  transition: transform 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vh;
+  height:6vh;
+  font-size: 2.5rem;
+  opacity: .6;
+  border: none;
+  transition: .5s;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-left:auto ;
+  bottom: 30px; /* 例如，距离视口底部10像素 */
+  right: 40px;  /* 距离视口右侧10像素 */
+}
+.goTop:hover{
+  border-radius: 5px;
+  color: #515151;
+}

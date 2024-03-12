@@ -1,0 +1,135 @@
+.menu_body{
+    display: flex;
+    justify-content: center;
+  }
+  .menu_cover{
+    padding: 8rem 0;
+  }
+  .menu_img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+  }
+  .menu_header{
+    display: flex;
+    justify-content: center;
+    padding-top:250px ;
+  }
+  .menu_header h4{
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1.5px solid black;
+    line-height: 2;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    font-family: 'Arial', sans-serif;
+    padding:1rem 10rem;
+  }
+  .menu-section {
+    display: grid;
+    padding: 0 2rem;
+    gap: 10px;
+  }
+  .menu-title{
+    font-size: 1.5em;
+    text-align: left;
+    padding:3rem 0;
+  }
+  .menu-title span{
+    border: 2px solid rgb(99, 97, 97);
+    padding: 3px;
+    border-radius: 10px 10px 2px 2px;
+    background-color: #fffbfb;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+  }
+  .item-name {
+    font-weight: 600;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  }
+  .item-price {
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .extra_container{
+    max-width: 100%;
+    height: auto;
+    padding:2rem 10rem;
+  }
+  .menu_extra{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    line-height: 3;
+  }
+  .extra_column h3 {
+    margin-bottom: 20px;
+  }
+  
+  .extra_column p {
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .annotations {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .annotations{
+    margin: 0;
+    padding:1rem 10rem;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 600;
+  }
+  @media only screen and (max-width:900px){ /*RWD : 900px*/
+    .menu_header{
+      display: flex;
+      justify-content: center;
+      padding-top:1rem ;
+    }
+    .menu {
+      display: grid;
+      grid-template-columns: auto auto;
+      gap: 3rem;
+      padding:1rem 1rem;
+    }
+    .extra_container{
+      max-width: 100%;
+      height: auto;
+      padding:2rem 4rem;
+    }
+    .annotations{
+      padding: 0rem 4rem;
+    }
+  }
+
+  @media only screen and (max-width:767px){   /*   RWD: 767px */
+  /*菜單品項*/
+  .menu_cover{
+    padding: 5rem 0;
+  }
+  .menu-section {
+    display: grid;
+    padding: 0;
+    gap: 10px;
+  }
+  .extra_container{
+    padding: 4rem 1rem;
+    font-size: 2.5vw;
+  }
+  .annotations{
+    padding-left:1rem ;
+  }
+  /*菜單品項*/
+  }

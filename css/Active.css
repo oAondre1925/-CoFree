@@ -1,0 +1,117 @@
+.active_body{
+    display: flex;
+    justify-content: center;
+    min-height: 10vh; 
+    margin: 0; 
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  }
+  .active{
+    width: 100%;
+  }
+  .active_container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr); 
+    border: 1px solid rgb(222, 221, 221);
+    background-color:#faf7f7;
+    padding: 3rem 5rem;
+  }
+  .active_item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto auto 10px;
+    gap: 10px;
+    border-radius: 6px;
+  }
+  .active_item img{
+    grid-row: 1 / -1;
+    width: 380px;
+    height:320px ; 
+  }
+  .active_item h3{
+    grid-row: 1; 
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+.active h4 {
+  grid-row: 1; 
+  color: rgb(126, 125, 125);
+}
+  .active_item p{
+    grid-column: 2/-1;
+    line-height: 1.2;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 600;
+    font-size: calc( 30 - 1vw);
+    padding:1rem;
+  }
+  @media only screen and (max-width:900px){ /*RWD : 900px*/
+    .active{
+      width: 100%;
+    }
+    .active_container{
+      display: grid;
+      grid-template-columns: repeat(1,1fr); 
+      border: 1px solid rgb(222, 221, 221);
+      background-color:#faf7f7;
+      padding: 1rem;
+    }
+    .active_item{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows:auto auto 10px;
+      gap: 10px;
+      border-radius: 6px;
+    }
+    .active_item img{
+      grid-row: 1 / -1;
+      width: 310px; 
+      height:310px ;
+    }
+  }
+
+  @media only screen and (max-width:767px){   /*   RWD: 767px */
+    .active{
+      width: 100%;
+    }
+    .active_container{
+      display: grid;
+      grid-template-columns: repeat(1,1fr); 
+      border: 1px solid rgb(222, 221, 221);
+      background-color:#faf7f7;
+      padding: 2rem;
+    }
+    .active_item{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows:auto auto;
+      gap: 10px;
+      border-radius: 6px;
+    }
+    .active_item img{
+      grid-column: 1 / -1;
+      grid-row:1/2 ;
+      width: 100%; 
+      height:auto ; 
+      padding: 0;
+    }
+    .active_item h3{
+      grid-column: 1/2;
+      grid-row: 2/3; 
+      font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+      text-align: left;
+  }
+  .active h4 {
+    grid-column: 2/-1;
+    grid-row: 2/3; 
+    color: rgb(126, 125, 125);
+  }
+    .active_item p{
+      grid-column: 1/-1;
+      grid-row: 3/-1;
+      line-height: 2;
+      font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+      font-weight: 600;
+      font-size: calc( 30 - 1vw);
+      padding: 0;
+    }
+    /*商店活動*/
+  }

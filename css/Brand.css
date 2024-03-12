@@ -1,0 +1,110 @@
+.brand{
+    background-color:#faf7f7;
+    padding: 2rem 8rem ;
+  }
+  .brand_container{
+    display: flex;
+    justify-content: start;
+    width:100%;
+    height: auto;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  }
+  .brand_img{
+    margin: 1rem;
+  }
+  .brand_img img{
+    width: 380px;
+    height: 300px;
+    display: flex;
+    vertical-align: top;  /*解決圖片間距的空格 */
+    transform: translateY(20%);
+    transition: transform 1s linear;
+    animation: fade 1s linear ;
+    opacity: 0;
+
+  }
+  .brand_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 6rem;
+    max-width: 50%;
+    height: auto;
+  }
+  .brand_content h5,.brand-content p{
+    font-size: 1.2vw;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    text-align: left;
+    transform: translateY(60%);
+    transition: transform 1s linear;
+    animation: fade 1.5s linear ;
+    opacity: 0;
+  }
+  .brand_content p{
+    padding: 2rem 0;
+    font-weight: 600;
+  }
+  @media only screen and (max-width:900px){
+    .brand{
+      background-color:#faf7f7;
+      padding:0;
+    }
+    .brand_container{
+      width: 100%;
+      height: auto;
+    }
+    .brand_img img{
+      width: 350px;
+      height: 300px;
+      margin-right: 1rem;
+      vertical-align: top;
+    }
+  }
+
+
+  @media only screen and (max-width:767px){   /*   RWD: 767px */
+  /*品牌*/
+  .brand_container{
+    flex-direction: column;
+    width: 100%;
+    text-align: center; /* This centers the text if needed */
+    overflow: auto; 
+    word-wrap: break-word;
+  }
+  .brand_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .brand_img img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  #brand_st{
+    position:relative;
+    width: 80%;
+    height:180px;
+  }
+  #brand_nd{
+    width: 173px;
+    height: 105px;
+    position: absolute;
+    margin-left: 210px;
+    margin-top: 120px;
+  }
+  .brand_content{
+    max-width: 100%; /* Full width */
+    height: auto;
+    margin:auto;
+    text-align: center;
+    padding: 1rem;
+  }
+  .brand_content h5{
+    text-align: center;
+  }
+/*品牌*/
+  
+  }

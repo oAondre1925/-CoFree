@@ -1,0 +1,40 @@
+  /* 關於我們 */
+  .about{
+    display: flex;
+    justify-content: center;
+  }
+  .about_us{
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    text-align: center;
+  }
+  .about_us img{
+    max-width:50% ;
+    height: auto;
+    transform: translateY(20%);
+    transition: transform 1s linear;
+    animation: fade 2s linear ;
+    opacity: 0;
+  }
+  .about_us h4{
+    font-size: 1.5rem;
+    transform: translateY(20%);
+    transition: transform 2s linear;
+    animation: fade 1s linear ;
+    opacity: 0;
+  }
+  .about_us p{
+    font-size: 1rem;
+    transform: translateY(20%);
+    transition: transform 2s linear;
+    animation: fade 2.5s linear ;
+    opacity: 0;
+    font-weight: 600;
+    padding-bottom: 2rem;
+  }
+
+  @media only screen and (max-width:767px){ /*RWD : 900px*/
+    .about_us img{
+      max-width: 100%;
+      height: auto;
+    }
+  }

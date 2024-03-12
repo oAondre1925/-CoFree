@@ -1,0 +1,225 @@
+  /* 導覽列 */
+  .header{
+    width: 100%;
+    height: auto;
+    background-color: #ffffff80;
+    backdrop-filter: blur(10px);
+    opacity: 1;
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    top:0;
+  }
+  .header_container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header_logo{
+    display: flex;
+    cursor: pointer;
+  }
+  .header_menu{
+    display: flex;
+    padding: 1rem;
+    background-color: transparent;
+    align-items: center;
+  }
+  .header_menu p{
+    padding: 0px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    color: rgb(68, 68, 67);
+    cursor: pointer;
+  }
+
+  #closeMenu{
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+    transition: .2s;
+    position: fixed; /* Changed from absolute to fixed */
+    top: 28px; /* Position it towards the top of the viewport */
+    right: 48px;
+    display: none;
+}
+#closeMenu:hover{
+  color: rgb(159, 159, 159);
+    cursor: pointer;
+}
+#menu{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+#menu li{
+    list-style: none;
+}
+#menu li a{
+    display: inline-block;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition:0.1s ease-in;
+    color: antiquewhite;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+#menu li a:hover{
+    color: inherit;
+}
+#menuBar{
+  position: fixed;
+  top: -100vh; /* 初始為視圖之外，保持隱藏 */
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #303436;
+  transition: top 0.3s ease-in;
+  text-align: center;
+  z-index: 100;
+}
+.menuBar_content{
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.menuBar_content p{
+  cursor:default;
+  color: antiquewhite;
+  font-size: 1rem;
+  padding-top: 1rem;
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  font-weight: 600;
+}
+
+
+   /*封面*/
+  .home_container{ 
+    margin-top: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .home_photo{
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .home_slogon{
+    max-width:100%;
+    height: auto;
+  }
+  .home_slogon h4{
+    width: 27px;
+    height: auto;
+    font-size: 22px;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 50px;
+  }
+  .home_slogon p{
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 50px;
+    text-align: left;
+    max-width: 60%;
+    height:auto;
+    margin: auto;
+    color: rgb(23, 23, 23);
+  }
+
+
+@media only screen and (max-width:900px){ /*RWD : 900px*/
+  /*side bar*/
+  .menuBar_content{
+    padding: 0;
+  }
+  .menuBar_content p{
+    font-size: 1rem;
+  }
+
+  #menuBar{
+    position: fixed;
+    top: -1000%;
+    left: 0;
+    width:100%;
+    height: 1000%;
+    background-color: #303436;
+    transition: 0.3s ease-in;
+    text-align: center;
+}
+#menu li a{
+  width: 100%;
+  height: auto;
+}
+#closeMenu{
+  color: aliceblue;
+  font-size: 2.5vw;
+  font-weight: 600;
+  transition: .2s;
+  position: fixed; /* Changed from absolute to fixed */
+  top: 28px; /* Position it towards the top of the viewport */
+  right: 48px;
+  display: none;
+}
+}
+
+@media only screen and (max-width:768px){   /*   RWD: 768px */
+  .home_container{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: end;
+  }
+  .home_photo{
+    max-width: 100%;
+    height: auto;
+  }
+  .home_slogon{
+    width: 100%;
+    padding-bottom:2rem ;
+  }
+/*side bar*/
+#menu{
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+#menuBar{
+  position: fixed;
+  top: -120vh; /* 初始為視圖之外，保持隱藏 */
+  left: 0;
+  width: 100%;
+  height: 120vh;
+  background-color: #303436;
+  transition: top 0.3s ease-in;
+  text-align: center;
+  z-index: 100;
+}
+  .menuBar_content{
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  .menuBar_content p{
+    font-size: 1rem;
+  }
+  #closeMenu{
+    color: aliceblue;
+    font-size: 3.8vw;
+    font-weight: 600;
+    transition: .2s;
+    position: fixed; /* Changed from absolute to fixed */
+    top: 28px; /* Position it towards the top of the viewport */
+    right: 48px;
+    display: none;
+  }
+}

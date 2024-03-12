@@ -1,0 +1,931 @@
+* {
+    margin: 0;
+    padding: 0;
+    animation: fade 2s ease-in ;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+
+  .feature{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    padding: 10rem 0;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .feature_img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .feature img{
+    overflow: hidden;
+    max-width: 85%;
+    height: auto;
+    transform:scale(1,1);transition: all 1.5s ease-out;
+  }
+  .feature img:hover{
+    transform:scale(1.05,1.05);
+  }
+  .feature_head{
+    display: flex;
+    padding: 1.5rem 10rem;
+    max-width: 100%;
+    height: auto;
+  }
+  .feature_head h4 {
+    padding-right:2rem ;
+    font-size: calc(32 - 1vw);
+  }
+  .feature_head p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: calc(30 - 1vw);
+    font-weight: 600;
+    text-align: left;
+    line-height: 2;
+  }
+
+
+
+
+
+    /*Feature Body*/
+  .feature_body{
+    display: flex;
+    justify-content: center;
+    min-height: 10vh;
+    margin: 0; 
+  }
+  .feature_center{
+    width: 1180px;
+    border-top: solid 1.8px rgb(66, 65, 65);
+  }
+  .feature_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem;
+  }
+  .feature_item{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 
+  }
+  .feature_item img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .feature_item h4{
+    text-align: left;
+    margin-left: 25px;
+    grid-column: 2/-1;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .feature_item p{
+    padding-left: 10px;
+    text-align: left;
+    grid-column: 1/-1;
+    line-height: 2;
+    margin-top: 40px;
+    font-family: sans-serif;
+    font-weight: 600;
+    vertical-align: top;
+  }
+
+
+  .active_body{
+    display: flex;
+    justify-content: center;
+    min-height: 10vh; 
+    margin: 0; 
+  }
+  .active{
+    width: 100%;
+  }
+  .active_container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr); 
+    border: 1px solid rgb(222, 221, 221);
+    background-color:#faf7f7;
+    padding: 3rem 5rem;
+  }
+  .active_item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto auto 10px;
+    gap: 10px;
+    border-radius: 6px;
+  }
+  .active_item img{
+    grid-row: 1 / -1;
+    width: 380px;
+    height:320px ; 
+  }
+  .active_item h3{
+    grid-row: 1; 
+    font-family: 'Courier New', Courier, monospace;
+}
+.active h4 {
+  grid-row: 1; 
+  color: rgb(126, 125, 125);
+}
+  .active_item p{
+    grid-column: 2/-1;
+    line-height: 1.2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: calc( 30 - 1vw);
+    padding:1rem;
+  }
+
+  .menu_body{
+    display: flex;
+    justify-content: center;
+  }
+  .menu_cover{
+    padding: 8rem 0;
+  }
+  .menu_img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+  }
+  .menu_header{
+    display: flex;
+    justify-content: center;
+    padding-top:250px ;
+  }
+  .menu_header h4{
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1.5px solid black;
+    line-height: 2;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    font-family: 'Arial', sans-serif;
+    padding:1rem 10rem;
+  }
+  .menu-section {
+    display: grid;
+    padding: 0 2rem;
+    gap: 10px;
+  }
+  .menu-title{
+    font-size: 1.5em;
+    text-align: left;
+    padding:3rem 0;
+  }
+  .menu-title span{
+    border: 2px solid rgb(99, 97, 97);
+    padding: 3px;
+    border-radius: 10px 10px 2px 2px;
+    background-color: #fffbfb;
+  }
+  .item {
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+  }
+  .item-name {
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  .item-price {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 5px;
+  }
+  .extra_container{
+    max-width: 100%;
+    height: auto;
+    padding:2rem 10rem;
+  }
+  .menu_extra{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    line-height: 3;
+  }
+  .extra_column h3 {
+    margin-bottom: 20px;
+  }
+  
+  .extra_column p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  .annotations {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 0.8em;
+  }
+
+  .annotations{
+    margin: 0;
+    padding:1rem 10rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+  }
+
+
+  .profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color:#faf7f7;
+    max-width: 100%;
+    height: auto;
+  }
+  .profile_img{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height:300px;
+    margin: 50px 50px;
+  }
+  .profile_item{
+    display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    height: auto;
+  }
+  #profile{
+    font-size: 1.5rem;
+    box-shadow: 0 1.5px 0px rgb(74, 74, 74);
+    max-width: 12%;
+    height: auto;
+    padding: 5px 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #name{
+    font-size: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3b3a3a;
+  }
+  #name span{
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    color: #515151;
+  }
+  #introduction{
+    font-size: calc( 30 - 1vw);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    font-family: sans-serif;
+  }
+
+
+  /*information area*/
+  .information{
+    display: flex;
+    justify-content: center;
+  } 
+  .information_pic{  
+    width:500px;
+    height: auto;
+    padding: 4rem 2rem;
+  }
+  .information_container{
+    max-width: 100%;
+    height: auto;
+    display: grid;
+    margin: 0 5rem;
+    line-height: 2;
+  }
+  .information_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+  }
+  .information_content h4{
+    border-bottom: 1.5px solid black;
+    margin-bottom: 30px;
+    width: 35%;
+    text-align: left;
+    font-weight: 600;
+  }
+  .information_content th{
+    font-size: 1.1rem;
+    font-weight: 600;
+    vertical-align: top;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 3rem;
+    padding-top: 10px;
+    line-height: 2.5;
+  }
+  .information_content td{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2.5;
+  }
+  /*Bootstrap 樣式調整*/
+  .carousel-indicators{
+    justify-content: end!important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .carousel-indicators button {
+    border-radius: 50% !important;
+    border: 2.2px solid rgb(251, 231, 78) !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #ffffff !important;
+}
+.carousel-item img{
+  width: 500px !important;
+  height: auto !important;
+}
+
+
+
+
+/*Foot*/
+.foot{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 5rem 22rem;
+}
+.foot_img{
+  width: 150px;
+  height: auto;
+  padding-bottom: 20px;
+}
+.foot_content{
+  width: 500px;
+  height: auto;
+}
+.foot_content p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 2;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+.foot_content a{
+  color: #4f4036;
+}
+.foot_bottom{
+  display: flex;
+  padding: 3rem 5rem;
+}
+.foot_bottom p{
+  font-size: 14px;
+  font-weight: 600;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.foot_svg{
+padding: 0 1rem;
+  vertical-align: top;
+  align-items: center;
+  cursor: pointer;
+}
+.foot_svg i{
+  padding: 0 5px;
+}
+/* 滾動animation */
+.scollUp.show{
+    transform: translateY(0);
+    opacity: 1;
+ }
+
+
+ /*至頂按鈕*/
+.goTop{
+  position: fixed;
+  transform: translateY(100vh);
+  transition: transform 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vh;
+  height:6vh;
+  font-size: 2.5rem;
+  opacity: .6;
+  border: none;
+  transition: .5s;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-left:auto ;
+  bottom: 30px; 
+  right: 40px;  
+}
+.goTop:hover{
+  border-radius: 5px;
+  color: #515151;
+}
+
+
+/*至頂按鈕*/
+/*淡入動畫效果*/
+  
+
+@media only screen and (max-width:900px){ /*RWD : 900px*/
+  .home_photo{
+    width: 441px;
+    height: 561px;
+  }
+  /*side bar*/
+  .menuBar_content{
+    padding: 0;
+  }
+  .menuBar_content p{
+    font-size: 0.85rem;
+  }
+
+
+  .brand{
+    background-color:#faf7f7;
+    padding:0;
+  }
+  .brand_container{
+    width: 100%;
+    height: auto;
+  }
+  .brand_img img{
+    width: 350px;
+    height: 300px;
+    margin-right: 1rem;
+    vertical-align: top;
+  }
+  .feature_head{
+    padding: 1rem;
+  }
+  .feature_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 定義三列 */
+    gap: 10px; /* 設定格子之間的間距 */
+    margin: 4rem;
+  }
+
+  .menu_header{
+    display: flex;
+    justify-content: center;
+    padding-top:1rem ;
+  }
+  .menu {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+    font-family: 'Arial', sans-serif;
+    padding:1rem 1rem;
+  }
+  .extra_container{
+    max-width: 100%;
+    height: auto;
+    padding:2rem 4rem;
+  }
+  .annotations{
+    padding: 0rem 4rem;
+  }
+  .profile_img{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height:200px;
+    margin: 2rem;
+  }
+  .profile_item{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+    height: auto;
+  }
+  .active{
+    width: 100%;
+  }
+  .active_container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr); /* 定義一列 */
+    border: 1px solid rgb(222, 221, 221);
+    background-color:#faf7f7;
+    padding: 1rem;
+  }
+  .active_item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto auto 10px;
+    gap: 10px;
+    border-radius: 6px;
+  }
+  .active_item img{
+    grid-row: 1 / -1;
+    width: 310px; /* 讓圖片寬度填滿整個單元格 */
+    height:310px ; /* 保持圖片的高度比例 */
+  }
+  .information_pic{  /*固定點播圖的size 寬度需和img一樣，否則指示器會跑位*/
+    width:420px;
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  .information_content h4{
+    margin-bottom: 10px;
+    width: 45%;
+
+  }
+  .carousel-item img{
+    width:420px !important;
+    height: auto !important;
+  }
+  .foot_img{
+    width: 120px;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .foot_content p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
+
+
+
+@media only screen and (max-width:767px){   /*   RWD: 767px */
+
+  .home_container{
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+  .home_photo{
+    max-width: 100%;
+    height: auto;
+  }
+  .home_slogon{
+    width: 100%;
+    padding-bottom:2rem ;
+  }
+/*side bar*/
+  .menuBar_content{
+    padding: 0;
+  }
+  .menuBar_content p{
+    font-size: 0.75rem;
+  }
+/*side bar*/
+
+
+  .about_us img{
+    max-width: 100%;
+    height: auto;
+  }
+    /* 關於我們 */
+  .active_item{
+    overflow: auto; /* 或者 'scroll'，取決於您希望如何顯示超出的內容 */
+    word-wrap: break-word; /* 確保文字可以在容器邊界處換行 */
+  }
+
+ /*品牌*/
+  .brand_container{
+    flex-direction: column;
+    width: 100%;
+    text-align: center; /* This centers the text if needed */
+    overflow: auto; 
+    word-wrap: break-word;
+  }
+  .brand_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+  }
+  .brand_img img{
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+  #brand_st{
+    position:relative;
+    width: 80%;
+    height:180px;
+  }
+  #brand_nd{
+    width: 173px;
+    height: 105px;
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 120px;
+  }
+  .brand_content{
+    max-width: 100%; /* Full width */
+    height: auto;
+    margin:auto;
+    text-align: center;
+    padding: 1rem;
+  }
+  .brand_content h5{
+    text-align: center;
+  }
+/*品牌*/
+
+
+/*商店特色(head)*/
+  .feature{
+    padding: 2rem 0;
+  }
+  .feature_head{
+    padding: 1rem;
+  }
+  .feature img:hover{
+    transform:scale(1.05,1.05);
+  }
+  .feature_head{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    max-width: 100%;
+    height: auto;
+  }
+  .feature_head h4 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-bottom:1rem ;
+    text-align: center;
+  }
+  .feature_head p {
+    margin: 0;
+    font-family: sans-serif;
+    font-size: calc(30 - 1vw);
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.5;
+  }
+/*商店特色(head)*/
+
+/*商店特色詳細資訊*/
+  .feature_container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* 定義三列 */
+    gap: 3rem; /* 設定格子之間的間距 */
+    margin: 2rem;
+  }
+  .feature_item img{
+    grid-column: 1/2;
+    margin: auto;
+  }
+  .feature_item h4{
+    grid-column: 1/2;
+    font-family: sans-serif;
+    font-weight: 600;
+    padding-top: 1rem;
+    margin: auto;
+    
+  }
+  .feature_item p{
+    padding-left:1rem;
+    margin: 0;
+    grid-column: 2/5;
+    grid-row: 1/3;
+  }
+/*商店特色詳細資訊*/
+
+  /*商店活動*/
+  .active{
+    width: 100%;
+  }
+  .active_container{
+    display: grid;
+    grid-template-columns: repeat(1,1fr); /* 定義一列 */
+    border: 1px solid rgb(222, 221, 221);
+    background-color:#faf7f7;
+    padding: 2rem;
+  }
+  .active_item{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto auto;
+    gap: 10px;
+    border-radius: 6px;
+  }
+  .active_item img{
+    grid-column: 1 / -1;
+    grid-row:1/2 ;
+    width: 100%; 
+    height:auto ; 
+    padding: 0;
+  }
+  .active_item h3{
+    grid-column: 1/2;
+    grid-row: 2/3; 
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+.active h4 {
+  grid-column: 2/-1;
+  grid-row: 2/3; 
+  color: rgb(126, 125, 125);
+}
+  .active_item p{
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    line-height: 2;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: calc( 30 - 1vw);
+    padding: 0;
+  }
+  /*商店活動*/
+
+
+  /*菜單品項*/
+  .menu_cover{
+    padding: 5rem 0;
+  }
+  .extra_container{
+    padding: 4rem 1rem;
+    font-size: 2.5vw;
+  }
+  .annotations{
+    padding-left:1rem ;
+  }
+  /*菜單品項*/
+
+/*自我介紹*/
+  .profile{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:#faf7f7;
+    max-width: 100%;
+    height: auto;
+  }
+  .profile_img{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height:300px;
+    margin:0;
+  }
+  .profile_item{
+    max-width: 80%;
+    height: auto;
+  }
+  #profile{
+    font-size: 1.4rem;
+    box-shadow: 0 0 0px rgb(74, 74, 74);
+    max-width: 100%;
+    height: auto;
+    padding:0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #name{
+    font-size: 1.2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #3b3a3a;
+  }
+  #name span{
+    font-size: 1.1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+    color: #515151;
+  }
+  #introduction{
+    font-size: calc( 30 - 1vw);
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: left;
+    font-family: sans-serif;
+    font-size: 0.75rem;
+  }
+/*自我介紹*/
+
+
+
+/*商店資訊*/
+  .information{
+    display: flex;
+    flex-direction: column;
+  } 
+  .information_pic{  /*固定點播圖的size 寬度需和img一樣，否則指示器會跑位*/
+    max-width:100%;
+    height: auto;
+    align-items: center;
+  }
+  .information_container{
+    max-width:30%;
+    height: auto;
+    line-height: 2;
+
+  }
+  .information_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+  }
+  .information_content h4{
+    border-bottom: 0px solid black;
+    margin-bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+  }
+  .information_content th{
+    font-size: 3.2vw;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    padding-right: 6rem;
+    line-height: 4;
+  }
+  .information_content td{
+    text-align: left;
+    font-size: 2.8vw;
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2.8;
+  }
+  /*Bootstrap 樣式調整*/
+  .carousel-indicators{
+    justify-content: center!important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+  }
+  .carousel-indicators button {
+    border-radius: 50% !important;
+    border: 2.2px solid rgb(251, 231, 78) !important;
+    width: 15px !important;
+    height: 15px !important;
+    background-color: #ffffff !important;
+}
+  .carousel-item img{
+    max-width:100%;
+    height: auto;
+  }
+/*商店資訊*/
+
+
+  
+/*Foot*/
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding:4rem 0;
+}
+.foot_img{
+  width: 100px;
+  height: auto;
+  padding-bottom: 20px;
+}
+.foot_content{
+
+  width: 300px;
+  height: auto;
+}
+.foot_content p{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 2;
+  font-size: 3vw;
+  font-weight: 600;
+  text-align: center;
+}
+
+.foot_bottom{
+  display: flex;
+  justify-content: start;
+  padding: 0;
+}
+.foot_bottom p{
+  font-size:1rem;
+  font-weight: 600;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.foot_svg{
+padding: 0 1rem;
+  vertical-align: top;
+  cursor: pointer;
+}
+.foot_svg i{
+  padding: 0 5px;
+}
+/*Foot*/
+}
